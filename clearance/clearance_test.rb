@@ -18,7 +18,6 @@ class ClearanceTest < Minitest::Test
   end
 
   def test_highest_percent_off_of_many_items
-    skip
     clearance = Clearance.new
     clearance << Item.new("shirt", price: 16, discount: 2)
     clearance << Item.new("pants", price: 10, discount: 5)
