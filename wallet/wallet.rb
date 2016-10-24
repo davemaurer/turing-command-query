@@ -2,7 +2,7 @@ class Wallet < Array
   def money
     {
       pennies: self.count(:penny),
-      nickels: self.count(:nickel),
+      nickels: self.count(:nickel) * 5,
       quarters: self.count(:quarter),
       dollars: self.count(:dollar),
     }

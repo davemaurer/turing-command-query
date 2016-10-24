@@ -18,7 +18,6 @@ class WalletTest < Minitest::Test
   end
 
   def test_add_nickels
-    skip
     wallet = Wallet.new
     wallet << :nickel
     assert_equal 5, wallet.cents
