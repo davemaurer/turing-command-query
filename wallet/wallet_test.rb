@@ -26,7 +26,6 @@ class WalletTest < Minitest::Test
   end
 
   def test_add_dimes
-    skip
     wallet = Wallet.new
     wallet << :dime
     assert_equal 10, wallet.cents
