@@ -86,4 +86,4 @@ end
 # a sobriety_message method along with it, or just takes care of the messages itself. And that's just my opinion.
 # You are free to do it a different way if you like. Sober? could also call a give_message method that handles
 # the puts statements, thus making that method a little smaller and separating responsibilities a bit. Again
-# it's your choice. 
+# it's your choice.
