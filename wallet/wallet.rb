@@ -11,4 +11,10 @@ class Wallet < Array
   def cents
     money.values.reduce(:+)
   end
+
+  def take(*amounts)
+    amounts.each do |amount|
+      self.delete_at(self.index(amount))
+    end
+  end
 end
