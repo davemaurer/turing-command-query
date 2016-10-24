@@ -63,7 +63,6 @@ class WalletTest < Minitest::Test
   end
 
   def test_take_various_coins_out
-    skip
     wallet = Wallet.new
     wallet << :penny
     wallet << :dime
@@ -75,7 +74,6 @@ class WalletTest < Minitest::Test
   end
 
   def test_ignore_coins_that_are_not_there
-    skip
     wallet = Wallet.new
     wallet << :penny
     wallet.take(:dime)

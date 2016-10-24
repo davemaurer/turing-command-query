@@ -14,7 +14,7 @@ class Wallet < Array
 
   def take(*amounts)
     amounts.each do |amount|
-      self.delete_at(self.index(amount))
+      self.delete_at(self.index(amount)) if self.index(amount)
     end
   end
 end
