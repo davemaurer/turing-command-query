@@ -81,4 +81,3 @@ class Adult
     @drink_counter += 1
   end
 end
-
